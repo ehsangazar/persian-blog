@@ -81,7 +81,7 @@ videoTitle: 'دوره آنلاین کد تمیز'
 
 - ## تعاریف و اصطلاحات
 
-- معرفی اصطلاحات KISS , DRY و YAGNI
+- [معرفی اصطلاحات KISS , DRY و YAGNI](/dry-kiss-yagni-definition)
 
 - ## نام‌گذاری
 
