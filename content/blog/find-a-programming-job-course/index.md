@@ -82,6 +82,7 @@ category: programming-world
 - [معرفی Git و سایت‌های BitBucket, Github و GitLab](/bitbucket-sourceree-git)
 - [آشنایی با زبان Markdown](/markdown-language)
 - [چطور وارد مسیر FrontEnd Developer شدن شویم؟](/how-to-be-frontend-developer)
+- [چطور وارد مسیر Backend Developer شدن شویم؟](/how-to-be-backend-developer)
 - <span class="star"></span> [مصاحبه با مهدی صفری - عضو هیئت مدیره‌ی شرکت کاربن](/chat-with-mahdi-safari)
 - <span class="star"></span> [مصاحبه با سینا شرف‌زاده - Technical Lead Alibaba Co
   ](/chat-with-sina-sharafzadeh-technical-lead-alibaba/)

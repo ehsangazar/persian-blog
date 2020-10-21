@@ -1,11 +1,11 @@
 ---
-title: چطور وارد مسیر FrontEnd Developer شدن شویم؟
-date: '2020-09-25 09:00:00'
-description: چطور وارد مسیر FrontEnd Developer شدن شویم؟
+title: چطور وارد مسیر Backend Developer شدن شویم؟
+date: '2020-10-21 14:00:00'
+description: چطور وارد مسیر Backend Developer شدن شویم؟
 cover: cover.jpg
 comment: true
 homepage: true
-videoSourceURL: https://www.youtube.com/embed/CbDmpcmswrg
+videoSourceURL: https://www.youtube.com/embed/dhLSgmd1J1w
 videoTitle: 'چطور وارد مسیر Backend Developer شدن شویم؟'
 category: programming-world
 ---
