@@ -118,4 +118,7 @@ videoTitle: 'دوره آنلاین کد تمیز'
 - به اندازه‌ی کافی Comment بنویسید نه بیشتر
 - لینک به گیت‌هاب کد‌های بررسی شده در این دوره
 
+- ## آموزش‌ بیشتر
+- [آشنایی با Software Architecture ها](/software-architectures/)
+
 </div>
