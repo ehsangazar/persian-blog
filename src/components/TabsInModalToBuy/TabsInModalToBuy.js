@@ -139,7 +139,7 @@ const TabsInModalToBuy = ({ title, description, price, image }) => {
                 )}
                 {` `}
                 را به شماره حساب زیر واریز نمایید
-                <div className="buy-number">6104 3374 9981 1279</div>
+                <div className="buy-number">6104 3373 4340 0121</div>
                 <div className="buy-name">زینب ناصری</div>
                 سپس رسید خرید را برای من ارسال نمایید
                 <div className="tab-buy-actions">

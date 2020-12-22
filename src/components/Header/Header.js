@@ -109,9 +109,9 @@ const Header = ({ page, location }) => {
                       >
                         تغییر رمز عبور
                       </Link>
-                      <Dropdown.Item onClick={handleSendTestimonial}>
+                      {/* <Dropdown.Item onClick={handleSendTestimonial}>
                         ثبت توصیه‌نامه
-                      </Dropdown.Item>
+                      </Dropdown.Item> */}
                       <Dropdown.Item onClick={handleClickOnLogOut}>
                         خروج
                       </Dropdown.Item>
@@ -160,9 +160,9 @@ const Header = ({ page, location }) => {
                           >
                             پروفایل
                           </Link>
-                          <Dropdown.Item onClick={handleSendTestimonial}>
+                          {/* <Dropdown.Item onClick={handleSendTestimonial}>
                             ثبت توصیه‌نامه
-                          </Dropdown.Item>
+                          </Dropdown.Item> */}
                           <Link
                             className="dropdown-item"
                             to={'/profile?state=changePassword'}
