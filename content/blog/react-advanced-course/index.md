@@ -200,4 +200,7 @@ videoTitle: 'دوره آنلاین React JS پیشرفته'
 - لینک Repository پروژه و مراحل کد زدن و URL پروژه PWA
 - نحوه‌ی آپدیت کردن Service Worker ها در صورت نیاز
 
+- ## آموزش‌های بیشتر
+- [آشنایی با تایپ اسکریپت](/introducing-typescript)
+
 </div>
