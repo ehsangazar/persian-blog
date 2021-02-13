@@ -97,6 +97,9 @@ const SpecialOffer = ({ location, features }) => {
             ملکه‌ی ذهنتان شود
           </p>
           <br />
+          <span className="courses-content-price">110,000 تومان</span>
+          <br />
+          <br />
           <Link
             className="btn btn-warning no-decoration margin-left-10"
             to="/clean-code-course/"
