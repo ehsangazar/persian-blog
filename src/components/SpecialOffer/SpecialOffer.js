@@ -28,6 +28,7 @@ const SpecialOffer = ({ location, features }) => {
     <>
       <div className="container">
         <div className="justify-content-md-center row">
+          <SpecialMessage />
           <div className="col-12 col-md-8">
             <p>
               شاید بهتر باشد این دوره‌ها را دوره‌های منتورشیپ بنامیم، چرا که من

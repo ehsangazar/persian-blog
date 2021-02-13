@@ -15,7 +15,6 @@ const Courses = ({ location }) => {
   return (
     <Layout location={location} title={'دوره‌ها'} page="courses">
       <SEO title={'دوره‌های آموزشی'} />
-      {/* <Banner /> */}
       <div id="content">
         <div className="container">
           <div className="breadcrumb">

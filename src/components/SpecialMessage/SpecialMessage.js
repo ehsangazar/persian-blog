@@ -5,10 +5,20 @@ const SpecialMessage = () => {
   return (
     <div className="special">
       <div className="alert alert-info widthAll">
-        برای دوستانی که از همه برای یادگیری AWS مشتاق‌ترند و اول ثبت نام میکنند
-        می‌توانید با کد
-        <span className="speacial-code">early_birds</span>
-        از تخفیف ۶۰ درصدی برای خرید این دوره تا تاریخ ۳۱ شهریور بهره‌مند شوید
+        سری به 
+        <span className="speacial-code">
+         <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC-NKQJ0bsHTXS_PzYCSvVUQ">
+            ِGazar TV
+         </a>
+        </span>
+
+         بزنید و Subscribe کنید و با کد  
+        <span className="speacial-code">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC-NKQJ0bsHTXS_PzYCSvVUQ">
+            GazarTV
+          </a>
+        </span>
+        از تخفیف ۵۰ درصدی روی تمامی دوره‌ها استفاده کنید
       </div>
     </div>
   )

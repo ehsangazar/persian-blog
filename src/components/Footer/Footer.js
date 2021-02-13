@@ -198,7 +198,7 @@ const Footer = ({ location }) => {
                   من، یا ایمیلی به me@ehsangazar.com بفرستید.
                 </p>
               </div>
-              <div className="col-12 space-up">
+              {/* <div className="col-12 space-up">
                 <div className="center-line-title">
                   <h5>سایر</h5>
                 </div>
@@ -216,7 +216,7 @@ const Footer = ({ location }) => {
                     </li>
                   </ul>
                 </p>
-              </div>
+              </div> */}
             </div>
             <div className="col-12 col-lg-8">
               <div className="col-12">

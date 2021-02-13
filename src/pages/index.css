@@ -516,6 +516,9 @@ code.language-text {
 .speacial-code {
   padding: 0 10px;
 }
+.speacial-code a {
+  color: white;
+}
 .special-offer-homepage {
   padding-top: 0px;
 }
