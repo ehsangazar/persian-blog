@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout/Layout'
 import AWSConceptCourse from './AWSConceptCourse'
-import JavaScriptCourse from './JavaScriptCourse'
 import WorkCourse from './WorkCourse'
 import ReactAdvancedCourse from './ReactAdvancedCourse'
 import ReactBasicCourse from './ReactBasicCourse'
@@ -17,11 +16,6 @@ const BlogPost = ({ data, location }) => {
 
   const uniquePath = post.fields.slug
 
-  if (
-    location.pathname.includes('es6-es7-etc-babel-webpack-javascript-course')
-  ) {
-    return <JavaScriptCourse location={location} data={data} />
-  }
   if (location.pathname.includes('react-advanced-course')) {
     return <ReactAdvancedCourse location={location} data={data} />
   }

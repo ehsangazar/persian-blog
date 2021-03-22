@@ -143,7 +143,7 @@ const TestimonialModal = ({
                     دوره آنلاین React JS مقدماتی
                   </option>
                   <option value="javascript">
-                    دوره کامل آموزش جاوا اسکریپت ورژن ES6 به بعد
+                    آموزش جاوا اسکریپت (JavaScript)
                   </option>
                   <option value="aws-concepts">
                     دوره آنلاین معرفی مفاهیم AWS یا Amazon Web Services

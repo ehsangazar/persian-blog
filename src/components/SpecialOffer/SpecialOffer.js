@@ -210,33 +210,31 @@ const SpecialOffer = ({ location, features }) => {
 
       <div className="row content-container">
         <div className="col-12 col-md-4 col-lg-4 content-image">
-          <Link to="/es6-es7-etc-babel-webpack-javascript-course">
+          <a
+            target="_blank" rel="noopener noreferrer"
+            href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-mk1122/"
+          >
             <img
               src={javaScriptImage}
-              alt="دوره کامل آموزش جاوا اسکریپت ورژن ES6 به بعد"
+              alt="آموزش جاوا اسکریپت (JavaScript)"
             />
-          </Link>
+          </a>
         </div>
         <div className="col-12 col-md-8 col-lg-8 content">
-          <h1>دوره کامل آموزش جاوا اسکریپت ورژن ES6 به بعد</h1>
+          <h1>آموزش جاوا اسکریپت (JavaScript)</h1>
           <p>
             این دوره با هدف سادگی بیان و کامل بودن، بهترین راه برای یادگیری جاوا
             اسکریپت با آخرین ویژگی‌های آن است. اگر مشتاق یادگیری هستید دست به
             کار شوید و من همراهتان در طول مسیر یادگیری خواهم بود.
           </p>
           <br />
-          <span className="courses-content-price">440,000 تومان</span>
-          <br />
-          <br />
-          <Link
+          <a
             className="btn btn-warning no-decoration margin-left-10"
-            to="/es6-es7-etc-babel-webpack-javascript-course"
+            target="_blank" rel="noopener noreferrer"
+            href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-mk1122/"
           >
-            مشاهده جزئیات
-          </Link>
-          <Button onClick={() => handleBuy('javascript')} variant="info">
-            خرید دوره جاوا اسکریپت ES6
-          </Button>
+            مشاهده دوره در سایت مکتب خونه
+          </a>
           <div className="note">
             سود فروش این دوره به حساب
             <Link to="/yarra-foundation-charity" className="secondary">

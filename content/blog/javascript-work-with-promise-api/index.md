@@ -85,5 +85,5 @@ fetchAPI()
 <br />
 
 این یکی از ویدئو‌های
-[دوره کامل آموزش جاوا اسکریپت ورژن ES6 به بعد](/es6-es7-etc-babel-webpack-javascript-course)
+[آموزش جاوا اسکریپت (JavaScript)](https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-mk1122/)
 هست.

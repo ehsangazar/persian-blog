@@ -40,7 +40,7 @@ const BuyModal = ({ showBuyModal, handleCloseBuyModal, isLoadingBuyModal }) => {
         {app.process.processName === 'javascript' && (
           <TabsInModalToBuy
             image={javaScriptImage}
-            title="دوره کامل آموزش جاوا اسکریپت ورژن ES6 به بعد"
+            title="آموزش جاوا اسکریپت (JavaScript)"
             description="در این دوره با تمامی ویژگی های جاوا اسکریپت ES6 به بعد همراه با
                 ابزارهای جدید آشنا می‌شوید"
             price="440000"

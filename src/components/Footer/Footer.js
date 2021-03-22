@@ -290,12 +290,12 @@ const Footer = ({ location }) => {
                         />
                       </Link>
                       <div className="card__content">
-                        <Link
-                          className="card__content-link"
-                          to="/es6-es7-etc-babel-webpack-javascript-course"
+                        <a
+                          target="_blank" rel="noopener noreferrer"
+                          href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-mk1122/"
                         >
-                          دوره کامل آموزش جاوا اسکریپت ورژن ES6 به بعد
-                        </Link>
+                          آموزش جاوا اسکریپت (JavaScript)
+                        </a>
                       </div>
                     </div>
                     <div className="col-12 post-card -tiny">
