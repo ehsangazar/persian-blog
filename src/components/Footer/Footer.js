@@ -1,22 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import reactBasicImage from './React-Basic.png'
-import reactAdvancedImage from './React-Advanced.png'
 import javaScriptImage from './../Footer/JavaScript.png'
-import awsConceptsImage from './../Footer/AWS-Concepts.png'
-import workImg from '../Footer/Work-Logo.png'
 import cleanCodeImg from '../Footer/Clean-Code.png'
 import { useQueryParam, StringParam } from 'use-query-params'
 import { Link } from 'gatsby'
 import { Button, Form, Alert } from 'react-bootstrap'
 import NewsletterConfirmModal from '../NewsletterConfirmModal/NewsletterConfirmModal'
-import NewsletterRegisterModal from '../NewsletterRegisterModal/NewsletterRegisterModal'
 import fetchHandler from '../../utils/fetchHandler'
-import handleFeatures from '../../configs/handleFeatures'
 
-const Footer = ({ location }) => {
-  const features = handleFeatures(location)
-  const [showNewsletterModal, setShowNewsletterModal] = useState(false)
+const Footer = () => {
   const [showConfirmEmailModal, setShowConfirmEmailModal] = useState(false)
   const [email, setEmail] = useState('')
   const [
@@ -35,29 +28,12 @@ const Footer = ({ location }) => {
     'newsletterEmailToken',
     StringParam
   )
-  const [modal, setModalToken] = useQueryParam('modal', StringParam)
-
-  const handleCloseNewsletterModal = () => setShowNewsletterModal(false)
   const handleCloseConfirmEmailModal = () => setShowConfirmEmailModal(false)
   const handleChangeNewsletterEmail = (event) => setEmail(event.target.value)
-
-  // useEffect(() => {
-  //   if (!localStorage.getItem('newsletter')) {
-  //     setTimeout(() => {
-  //       setShowNewsletterModal(true)
-  //     }, 10000)
-  //   }
-  // }, [])
 
   useEffect(() => {
     if (newsletterEmailToken) {
       handleConfirmEmail()
-    }
-  }, [])
-
-  useEffect(() => {
-    if (modal === 'newsletter') {
-      setShowNewsletterModal(true)
     }
   }, [])
 
@@ -198,136 +174,77 @@ const Footer = ({ location }) => {
                   من، یا ایمیلی به me@ehsangazar.com بفرستید.
                 </p>
               </div>
-              {/* <div className="col-12 space-up">
-                <div className="center-line-title">
-                  <h5>سایر</h5>
-                </div>
-                <p className="contact-method">
-                  <ul>
-                    <li>
-                      - برنامه‌ی انتشار یا{' '}
-                      <OutboundLink
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href="https://trello.com/b/RttI3QMi/editorial-calendar-persian-blog"
-                      >
-                        Editorial Calendar
-                      </OutboundLink>
-                    </li>
-                  </ul>
-                </p>
-              </div> */}
             </div>
             <div className="col-12 col-lg-8">
               <div className="col-12">
                 <div className="footer-col -feature-post">
                   <div className="center-line-title">
-                    <h5>دوره‌ها</h5>
+                    <h5>دوره‌ها با همکاری مکتب‌خونه</h5>
                   </div>
                   <div className="feature-post-block d-flex flex-wrap">
                     <div className="col-12 post-card -tiny">
-                      <Link className="card__cover" to="/clean-code-course">
+                      <OutboundLink
+                          className="card__cover"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-Clean-Code-mk1125"
+                        >
                         <img src={cleanCodeImg} alt="دوره آنلاین کد تمیز" />
-                      </Link>
+                      </OutboundLink>
                       <div className="card__content">
-                        <Link
-                          className="card__content-link"
-                          to="/clean-code-course"
+                        <OutboundLink
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-Clean-Code-mk1125"
                         >
                           دوره آنلاین کد تمیز
-                        </Link>
-                      </div>
-                    </div>
-                    {features.workCourse && (
-                      <div className="col-12 post-card -tiny">
-                        <Link
-                          className="card__cover"
-                          to="/find-a-programming-job-course"
-                        >
-                          <img
-                            src={workImg}
-                            alt="چطور وارد دنیای برنامه‌نویسی شویم و چطور پیشرفت کنیم؟"
-                          />
-                        </Link>
-                        <div className="card__content">
-                          <Link
-                            className="card__content-link"
-                            to="/find-a-programming-job-course"
-                          >
-                            چطور وارد دنیای برنامه‌نویسی شویم و چطور پیشرفت
-                            کنیم؟
-                          </Link>
-                        </div>
-                      </div>
-                    )}
-                    <div className="col-12 post-card -tiny">
-                      <Link
-                        className="card__cover"
-                        to="/amazon-web-services-concepts-course"
-                      >
-                        <img
-                          src={awsConceptsImage}
-                          alt="دوره آنلاین معرفی مفاهیم AWS"
-                        />
-                      </Link>
-                      <div className="card__content">
-                        <Link
-                          className="card__content-link"
-                          to="/amazon-web-services-concepts-course"
-                        >
-                          دوره آنلاین معرفی مفاهیم AWS
-                        </Link>
+                        </OutboundLink>
                       </div>
                     </div>
                     <div className="col-12 post-card -tiny">
-                      <Link
+                      <OutboundLink
                         className="card__cover"
-                        to="/es6-es7-etc-babel-webpack-javascript-course"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-mk1122/"
                       >
                         <img
                           src={javaScriptImage}
-                          alt="دوره React JS پیشرفته"
+                          alt="آموزش جاوا اسکریپت (JavaScript)"
                         />
-                      </Link>
+                      </OutboundLink>
                       <div className="card__content">
-                        <a
-                          target="_blank" rel="noopener noreferrer"
+                        <OutboundLink
+                          className="card__content-link"
+                          rel="noopener noreferrer"
+                          target="_blank"
                           href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%AC%D8%A7%D9%88%D8%A7-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA-mk1122/"
                         >
                           آموزش جاوا اسکریپت (JavaScript)
-                        </a>
+                        </OutboundLink>
                       </div>
                     </div>
                     <div className="col-12 post-card -tiny">
-                      <Link className="card__cover" to="/react-basic-course">
+                      <OutboundLink
+                        className="card__cover"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%85%D9%82%D8%AF%D9%85%D8%A7%D8%AA%DB%8C-react-js-mk1127/"
+                      >
                         <img
                           src={reactBasicImage}
                           alt="دوره React JS مقدماتی"
                         />
-                      </Link>
+                      </OutboundLink>
                       <div className="card__content">
-                        <Link
+                        <OutboundLink
                           className="card__content-link"
-                          to="/react-basic-course"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%85%D9%82%D8%AF%D9%85%D8%A7%D8%AA%DB%8C-react-js-mk1127/"
                         >
                           دوره React JS مقدماتی
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="col-12 post-card -tiny">
-                      <Link className="card__cover" to="/react-advanced-course">
-                        <img
-                          src={reactAdvancedImage}
-                          alt="دوره React JS پیشرفته"
-                        />
-                      </Link>
-                      <div className="card__content">
-                        <Link
-                          className="card__content-link"
-                          to="/react-advanced-course"
-                        >
-                          دوره React JS پیشرفته
-                        </Link>
+                        </OutboundLink>
                       </div>
                     </div>
                   </div>
@@ -347,9 +264,6 @@ const Footer = ({ location }) => {
               <Link to="/about">درباره</Link>
             </li>
             <li>
-              <Link to="/courses">دوره‌ها</Link>
-            </li>
-            <li>
               <Link to="/terms-conditions">قوانین و مقررات</Link>
             </li>
             <li>
@@ -357,18 +271,6 @@ const Footer = ({ location }) => {
             </li>
           </ul>
         </div>
-
-        <NewsletterRegisterModal
-          email={email}
-          showNewsletterModal={showNewsletterModal}
-          handleCloseNewsletterModal={handleCloseNewsletterModal}
-          isLoadingNewsletterModalSubmit={isLoadingNewsletterModalSubmit}
-          handleChangeNewsletterEmail={handleChangeNewsletterEmail}
-          handleSubmitRegisterNewsletter={handleSubmitRegisterNewsletter}
-          responseOfApiRegisteringNewsletter={
-            responseOfApiRegisteringNewsletter
-          }
-        />
 
         <NewsletterConfirmModal
           showConfirmEmailModal={showConfirmEmailModal}

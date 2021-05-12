@@ -6,7 +6,6 @@ import { useQueryParam, StringParam } from 'use-query-params'
 
 import RegisterModal from '../RegisterModal/RegisterModal'
 import LoginModal from '../LoginModal/LoginModal'
-import BuyModal from '../BuyModal/BuyModal'
 import ForgotModal from '../ForgotModal/ForgotModal'
 import ResetModal from '../ResetModal/ResetModal'
 import RegisterConfirmModal from '../RegisterConfirmModal/RegisterConfirmModal'
@@ -24,13 +23,11 @@ const AuthModals = () => {
   const [showForgotModal, setShowForgotModal] = useState(false)
   const [showResetModal, setShowResetModal] = useState(false)
   const [showConfirmEmailModal, setShowConfirmEmailModal] = useState(false)
-  const [showBuyModal, setShowBuyModal] = useState(false)
 
   const [isLoadingRegisterForm, setIsLoadingRegisterForm] = useState(false)
   const [isLoadingLoginForm, setIsLoadingLoginForm] = useState(false)
   const [isLoadingForgotForm, setIsLoadingForgotForm] = useState(false)
   const [isLoadingResetForm, setIsLoadingResetForm] = useState(false)
-  const [isLoadingBuyModal, setIsLoadingBuyModal] = useState(false)
   const [
     isLoadingRegisterConfirmModal,
     setIsLoadingRegisterConfirmModal,
@@ -373,11 +370,6 @@ const AuthModals = () => {
         showConfirmEmailModal={showConfirmEmailModal}
         handleCloseConfirmEmailModal={handleCloseConfirmEmailModal}
         isLoadingRegisterConfirmModal={isLoadingRegisterConfirmModal}
-      />
-      <BuyModal
-        showBuyModal={showBuyModal}
-        handleCloseBuyModal={handleCloseBuyModal}
-        isLoadingBuyModal={isLoadingBuyModal}
       />
     </>
   )

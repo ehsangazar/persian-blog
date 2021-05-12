@@ -1129,7 +1129,8 @@ header.-theme--violet .header-wrapper .header__icon-group #search.active {
   margin-top: -1.5625em;
 }
 .post-card:hover .card__cover > img {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  opacity: 1;
 }
 .post-card .card__cover {
   display: flex;

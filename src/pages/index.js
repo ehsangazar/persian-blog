@@ -5,7 +5,7 @@ import SEO from '../components/SEO/SEO'
 import Posts from '../components/Posts/Posts'
 import { Button } from 'react-bootstrap'
 
-const PAGE_NUMBER = 15
+const PAGE_NUMBER = 100
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -29,7 +29,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle} page="homepage">
       <SEO title={data.site.siteMetadata.author.summary} />
       <Posts posts={posts} />
-      {more && (
+      {false && more && (
         <div className="loadMore">
           <Button variant="secondary" onClick={handleShowMore}>
             مطالب بیشتر

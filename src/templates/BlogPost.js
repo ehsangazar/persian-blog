@@ -1,11 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout/Layout'
-import AWSConceptCourse from './AWSConceptCourse'
-import WorkCourse from './WorkCourse'
-import ReactAdvancedCourse from './ReactAdvancedCourse'
-import ReactBasicCourse from './ReactBasicCourse'
-import CleanCodeCourse from './CleanCodeCourse'
 import SEO from '../components/SEO/SEO'
 import Video from '../components/Video/Video'
 import Comment from '../components/Comment/Comment'
@@ -13,25 +8,7 @@ import Comment from '../components/Comment/Comment'
 const BlogPost = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
-
   const uniquePath = post.fields.slug
-
-  if (location.pathname.includes('react-advanced-course')) {
-    return <ReactAdvancedCourse location={location} data={data} />
-  }
-  if (location.pathname.includes('react-basic-course')) {
-    return <ReactBasicCourse location={location} data={data} />
-  }
-  if (location.pathname.includes('amazon-web-services-concepts-course')) {
-    return <AWSConceptCourse location={location} data={data} />
-  }
-  if (location.pathname.includes('find-a-programming-job-course')) {
-    return <WorkCourse location={location} data={data} />
-  }
-  if (location.pathname.includes('clean-code-course')) {
-    return <CleanCodeCourse location={location} data={data} />
-  }
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -55,14 +32,6 @@ const BlogPost = ({ data, location }) => {
                   <i className="fas fa-home"></i>خانه
                 </Link>
               </li>
-              {post.frontmatter.category === 'programming-world' && (
-                <li>
-                  <Link to={'/find-a-programming-job-course'}>
-                    دوره آنلاین چطور وارد دنیای برنامه‌نویسی شویم و چطور پیشرفت
-                    کنیم؟
-                  </Link>
-                </li>
-              )}
               <li className="active">{post.frontmatter.title}</li>
             </ul>
           </div>
@@ -93,27 +62,6 @@ const BlogPost = ({ data, location }) => {
                   <section dangerouslySetInnerHTML={{ __html: post.html }} />
                 </article>
                 <div className="space-8" />
-                {(post.frontmatter.lessonAfter ||
-                  post.frontmatter.lessonBefore) && (
-                  <div className="direction-lessons">
-                    {post.frontmatter.lessonAfter && (
-                      <div>
-                        درس بعدی:{` `}
-                        <Link to={post.frontmatter.lessonAfter}>
-                          {post.frontmatter.lessonAfterTitle}
-                        </Link>
-                      </div>
-                    )}
-                    {post.frontmatter.lessonBefore && (
-                      <div>
-                        درس قبلی:{` `}
-                        <Link to={post.frontmatter.lessonBefore}>
-                          {post.frontmatter.lessonBeforeTitle}
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-                )}
                 <div className="space-2" />
                 {post.frontmatter.comment && (
                   <Comment uniquePath={uniquePath} />

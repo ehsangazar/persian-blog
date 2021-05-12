@@ -1,9 +1,8 @@
 import React, { useState, useContext } from 'react'
 import AuthModals from '../AuthModals/AuthModals'
-import PaidModal from '../PaidModal/PaidModal'
 import TestimonialModal from '../TestimonialModal/TestimonialModal'
 import MyApp from '../../contexts/MyApp'
-import profileImage from './profile.png'
+import profileImage from './profile-ehsan-gazar.jpg'
 import { Link, navigate } from 'gatsby'
 import { Button, Dropdown } from 'react-bootstrap'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -18,11 +17,6 @@ const Header = ({ page, location }) => {
     app.user.updateUser()
     navigate('/')
   }
-
-  const handleSendTestimonial = () => {
-    setShowTestimonialModal(true)
-  }
-
   return (
     <>
       <header className="theme-default">
@@ -37,46 +31,12 @@ const Header = ({ page, location }) => {
                 <p>برنامه نویس، مدرس، بلاگر و صخره نورد</p>
               </div>
             </div>
-            <nav className="desktopOnly">
-              <ul>
-                <li
-                  className={`nav-item ${page === 'homepage' ? 'active' : ''}`}
-                >
-                  <Link to={'/'}>خانه</Link>
-                </li>
-                <li className={`nav-item ${page === 'about' ? 'active' : ''}`}>
-                  <Link to="/about">درباره</Link>
-                </li>
-                <li
-                  className={`nav-item ${page === 'consult' ? 'active' : ''}`}
-                >
-                  <Link to="/consult">مشاوره</Link>
-                </li>
-                <li
-                  className={`nav-item ${page === 'courses' ? 'active' : ''}`}
-                >
-                  <Link to="/courses">دوره‌ها</Link>
-                </li>
-              </ul>
-            </nav>
-            <div className="mobileOnly">
+          <div className="mobileOnly">
               <Dropdown>
                 <Dropdown.Toggle variant="dropdown">
                   <GiHamburgerMenu /> {` `}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Link className="dropdown-item" to={'/'}>
-                    خانه
-                  </Link>
-                  <Link className="dropdown-item" to={'/about'}>
-                    درباره
-                  </Link>
-                  <Link className="dropdown-item" to={'/consult'}>
-                    مشاوره
-                  </Link>
-                  <Link className="dropdown-item" to={'/courses'}>
-                    دوره‌ها
-                  </Link>
                   {!app.user.userData.id && (
                     <>
                       <Dropdown.Divider />
@@ -184,7 +144,6 @@ const Header = ({ page, location }) => {
       </header>
 
       <AuthModals />
-      <PaidModal />
       <TestimonialModal
         showTestimonialModal={showTestimonialModal}
         setShowTestimonialModal={setShowTestimonialModal}

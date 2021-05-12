@@ -431,7 +431,8 @@ button.dropdown-toggle.btn.btn-dropdown:focus {
   line-height: 30px;
 }
 .post-card .card__cover img {
-  height: 220px;
+  height: 190px;
+  opacity: 0.8;
 }
 .post-card.-tiny .card__cover {
   border-radius: 3px;
