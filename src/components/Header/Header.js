@@ -7,6 +7,7 @@ import { Button, Dropdown } from 'react-bootstrap'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import loading from '../Icon/loading.gif'
 import './Header.css'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const Header = ({ page, location }) => {
   const app = useContext(MyApp)
@@ -123,15 +124,27 @@ const Header = ({ page, location }) => {
               </div>
               {!app.user.userData.id && (
                 <div className="header__buttons">
+                  <OutboundLink
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
+                  >
+                    <Button
+                      variant="primary"
+                      type="button"
+                    >
+                      دوره‌ها
+                    </Button>
+                  </OutboundLink>
                   <Button
-                    variant="primary"
+                    variant="seondary"
                     type="submit"
                     onClick={() => app.modal.setModalToShow('register')}
                   >
-                    ثبت نام
+                    ثبت‌نام
                   </Button>
                   <Button
-                    variant="primary"
+                    variant="seondary"
                     type="submit"
                     onClick={() => app.modal.setModalToShow('login')}
                   >

@@ -149,6 +149,9 @@ small,
     display: block;
   }
 }
+pre.language-javascript {
+  direction: ltr;
+}
 
 /* Form */
 .bodyModal img {

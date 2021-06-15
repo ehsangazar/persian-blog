@@ -4,6 +4,7 @@ import Layout from '../components/Layout/Layout'
 import SEO from '../components/SEO/SEO'
 import Video from '../components/Video/Video'
 import Comment from '../components/Comment/Comment'
+import './BlogPost.css'
 
 const BlogPost = ({ data, location }) => {
   const post = data.markdownRemark
@@ -27,7 +28,7 @@ const BlogPost = ({ data, location }) => {
         <div className="container">
           <div className="about-us">
             <div className="row content-container">
-              <div className="col-12 col-md-4 col-lg-4 content-image">
+              <div className={`col-12 col-md-4 col-lg-4 content-image ${post.frontmatter.videoSourceURL ? '--desktopOnly' : ''}`}>
                 <img
                   src={
                     post.frontmatter.cover &&
