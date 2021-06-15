@@ -74,6 +74,14 @@ const Header = ({ page, location }) => {
               </> */}
               {!app.user.userData.id && (
                 <>
+                  <OutboundLink
+                    className="dropdown-item"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
+                  >
+                    دوره‌ها
+                  </OutboundLink>
                   <Dropdown.Divider />
                   <Link
                     className="dropdown-item"
@@ -91,6 +99,15 @@ const Header = ({ page, location }) => {
               )}
               {app.user.userData.id && (
                 <>
+                  <Dropdown.Divider />
+                  <OutboundLink
+                    className="dropdown-item"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
+                  >
+                      دوره‌ها
+                  </OutboundLink>
                   <Dropdown.Divider />
                   <Link
                     className="dropdown-item"
@@ -116,26 +133,26 @@ const Header = ({ page, location }) => {
           </Dropdown>
         </div>
         <div className="--desktopOnly">
-            <div className="header__actions">
+            <div className="header__actions">              
               <div>
                 {app.load.loadingName === 'profile' && (
                   <img className="loading" src={loading} alt="loading" />
                 )}
               </div>
+              <OutboundLink
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
+              >
+                <Button
+                  variant="primary"
+                  type="button"
+                >
+                  دوره‌ها
+                </Button>
+              </OutboundLink>
               {!app.user.userData.id && (
-                <div className="header__buttons">
-                  <OutboundLink
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
-                  >
-                    <Button
-                      variant="primary"
-                      type="button"
-                    >
-                      دوره‌ها
-                    </Button>
-                  </OutboundLink>
+                <div className="header__buttons">                  
                   <Button
                     variant="seondary"
                     type="submit"
