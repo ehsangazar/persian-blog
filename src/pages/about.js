@@ -2,12 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/SEO/SEO'
-import '../app/assets/css/elegant.css'
-import '../app/assets/css/custom_bootstrap.css'
-import '../app/assets/css/slick.css'
-import '../app/assets/css/plyr.min.css'
-import '../app/assets/css/style.css'
-import './index.css'
 import aboutProfile from './about.png'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
@@ -15,26 +9,15 @@ const About = ({ location }) => {
   return (
     <Layout location={location} title={'درباره'} page="about">
       <SEO title={'درباره احسان گازار'} />
-      {/* <Banner /> */}
       <div id="content">
-        <div class="container">
-          <div class="breadcrumb">
-            <ul>
-              <li>
-                <Link to={'/'}>
-                  <i class="fas fa-home"></i>خانه
-                </Link>
-              </li>
-              <li class="active">درباره</li>
-            </ul>
-          </div>
-          <div class="about-us">
-            <div class="row content-container">
+        <div className="container">
+          <div className="about-us">
+            <div className="row content-container">
               <>
-                <div class="col-12 col-md-4 col-lg-4 content-image">
+                <div className="col-12 col-md-4 col-lg-4 content-image">
                   <img src={aboutProfile} alt="درباره احسان گازار" />
                 </div>
-                <div class="col-12 col-md-8 col-lg-8 content">
+                <div className="col-12 col-md-8 col-lg-8 content">
                   <h1>درباره</h1>
                   <p>
                     احسان گازار هستم.

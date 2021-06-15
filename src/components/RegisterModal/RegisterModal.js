@@ -27,9 +27,9 @@ const RegisterModal = ({
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div className="register-body">
+          <div className="bodyModal">
             <img src={registerImage} alt="register-image" />
-            <div className="register-body-form">
+            <div className="bodyModal__form">
               {responseOfApiRegister && (
                 <Alert variant={responseOfApiRegister.type}>
                   {responseOfApiRegister.message}

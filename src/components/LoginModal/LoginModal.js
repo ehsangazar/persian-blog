@@ -27,9 +27,9 @@ const LoginModal = ({
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div className="register-body">
+          <div className="bodyModal">
             <img src={loginImage} alt="login-image" />
-            <div className="register-body-form">
+            <div className="bodyModal__form">
               {responseOfApiLogin && (
                 <Alert variant={responseOfApiLogin.type}>
                   {responseOfApiLogin.message}

@@ -7,6 +7,7 @@ import profileImg from '../Header/profile.png'
 import loadingImage from '../Icon/loading.gif'
 import ReplyModal from '../ReplyModal/ReplyModal'
 import { Alert, Form, Button } from 'react-bootstrap'
+import './Comment.css'
 
 const Comment = ({ uniquePath }) => {
   const [loading, setLoading] = useState(false)
@@ -131,11 +132,18 @@ const Comment = ({ uniquePath }) => {
                         )}.jpg`}
                         alt={`${comment.user.first_name} ${comment.user.last_name}`}
                       />
+                      {admin && comment.status === 'accepted' && (
+                        <div className="admin-button-comment">
+                          <Button onClick={() => handleOpenReply(comment)}>
+                            پاسخ
+                          </Button>
+                        </div>
+                      )}
                     </div>
 
                     <div className="comment__item__content">
                       <div className="comment__item__content__header">
-                        <h5>
+                        <h5 className="--noMargin">
                           {comment.user.first_name} {comment.user.last_name}
                         </h5>
                         <div className="data">
@@ -149,14 +157,7 @@ const Comment = ({ uniquePath }) => {
                       </div>
                       <p>{comment.comment}</p>
                     </div>
-                  </div>
-                  {admin && comment.status === 'accepted' && (
-                    <div className="admin-button-comment">
-                      <Button onClick={() => handleOpenReply(comment)}>
-                        پاسخ
-                      </Button>
-                    </div>
-                  )}
+                  </div>                  
                   {admin && comment.status === 'deleted' && (
                     <div className="admin-button-comment">
                       <Alert variant={'danger'}>این نظر حذف شد</Alert>
@@ -172,7 +173,7 @@ const Comment = ({ uniquePath }) => {
                           </div>
                           <div className="comment__item__content">
                             <div className="comment__item__content__header">
-                              <h5>احسان گازار</h5>
+                              <h5 className="--noMargin">احسان گازار</h5>
                               <div className="data">
                                 <p>
                                   <i className="far fa-clock"></i>

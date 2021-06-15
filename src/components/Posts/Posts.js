@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import './Posts.css'
 
 const Posts = ({ posts }) => {
   return (
     <div id="content">
       <div className="container">
-        <div className="blog-masonry">
+        <div className="blog-masonry posts">
           {posts.map(({ node }, index) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
@@ -20,22 +21,9 @@ const Posts = ({ posts }) => {
                   />
                 </Link>
                 <div className="card__content">
-                  <h5 className="card__content-category">
-                    {node.frontmatter.category}
-                  </h5>
                   <Link to={node.fields.slug} className="card__content-title">
-                    {title}
+                    <h5 className="--noMargin">{title}</h5>
                   </Link>
-                  <div className="card__content-info">
-                    <div className="info__time">
-                      <i className="far fa-clock"></i>
-                      <p>
-                        {new Date(node.frontmatter.date).toLocaleDateString(
-                          "fa-IR"
-                        )}
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             )

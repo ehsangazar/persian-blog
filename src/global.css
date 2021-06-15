@@ -1,0 +1,209 @@
+@font-face {
+  font-family: Anjoman;
+  src: url('./fonts/AnjomanFaNum-Regular.eot');
+  src: url('./fonts/AnjomanFaNum-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/AnjomanFaNum-Regular.woff2') format('woff2'),
+    url('./fonts/AnjomanFaNum-Regular.woff') format('woff'),
+    url('./fonts/AnjomanFaNum-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Anjoman;
+  src: url('./fonts/AnjomanFaNum-Bold.eot');
+  src: url('./fonts/AnjomanFaNum-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/AnjomanFaNum-Bold.woff2') format('woff2'),
+    url('./fonts/AnjomanFaNum-Bold.woff') format('woff'),
+    url('./fonts/AnjomanFaNum-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Anjoman;
+  src: url('./fonts/AnjomanFaNum-SemiBold.eot');
+  src: url('./fonts/AnjomanFaNum-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/AnjomanFaNum-SemiBold.woff2') format('woff2'),
+    url('./fonts/AnjomanFaNum-SemiBold.woff') format('woff'),
+    url('./fonts/AnjomanFaNum-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Anjoman;
+  src: url('./fonts/AnjomanFaNum-SemiBold.eot');
+  src: url('./fonts/AnjomanFaNum-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/AnjomanFaNum-SemiBold.woff2') format('woff2'),
+    url('./fonts/AnjomanFaNum-SemiBold.woff') format('woff'),
+    url('./fonts/AnjomanFaNum-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+:root {
+  --black: #2c1b0c;
+  --primarycolor: #d0750d;
+  --primaryColorHover: #fe8e00;
+}
+
+* {
+  font-family: Anjoman !important;
+  direction: rtl;
+  text-align: right;
+  color: #2c1b0c;
+}
+html {
+  font-size: 100%;
+}
+html,
+body {
+  font-family: Anjoman !important;
+  direction: rtl;
+  font-size: 16px;
+  font-weight: normal;
+  color: #2c1b0c;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+h1.--noMargin,
+h2.--noMargin,
+h3.--noMargin,
+h4.--noMargin,
+h5.--noMargin {
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 1.802rem;
+}
+a {
+  color: var(--primarycolor);
+  cursor: pointer;
+}
+a:hover,
+a:hover * {
+  color: var(--primaryColorHover);
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+h2 {
+  font-size: 1.602rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.424rem;
+}
+
+h4 {
+  font-size: 1.266rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+small,
+.text_small {
+  font-size: 0.889rem;
+}
+.--displayNone {
+  display: none;
+}
+.--desktopOnly {
+  display: none;
+}
+.--mobileOnly {
+  display: none;
+}
+*:focus {
+  outline: none !important;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 765px) {
+  .--mobileOnly {
+    display: block;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .--desktopOnly {
+    display: block;
+  }
+}
+
+/* Form */
+.bodyModal img {
+  width: 100%;
+}
+.modal-header .close {
+  padding: 10px;
+  margin: 0;
+}
+input.form-control {
+  height: 50px;
+}
+
+/* Loading */
+.loading {
+  width: 30px;
+  height: 30px;
+}
+
+/* Theming */
+.btn-primary {
+  background-color: var(--primarycolor);
+  border-color: var(--primarycolor);
+}
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary.focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  background-color: var(--primaryColorHover);
+  border-color: var(--primaryColorHover);
+  box-shadow: none;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--primarycolor);
+}
+.content-image img {
+  width: 100%;
+}
+.prifle-tab-heading,
+.profile-tabs h1 {
+  margin-top: 20px;
+}
+.content-video iframe {
+  width: 100%;
+  min-height: 200px;
+}
+
+@media only screen and (min-width: 550px) {
+  .content-video iframe {
+    min-height: 300px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .content-video iframe {
+    min-height: 400px;
+  }
+}

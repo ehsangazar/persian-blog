@@ -155,20 +155,10 @@ const Profile = ({ location }) => {
       {app.user.userData.id && (
         <div id="content">
           <div className="container">
-            <div className="breadcrumb">
-              <ul>
-                <li>
-                  <Link to={'/'}>
-                    <i className="fas fa-home"></i>خانه
-                  </Link>
-                </li>
-                <li className="active">پروفایل</li>
-              </ul>
-            </div>
             <div className="about-us">
               <div className="row content-container">
                 <>
-                  <div className="col-12 col-md-4 col-lg-3 profle-image">
+                  <div className="col-12 col-md-4 col-lg-3 content-image">
                     <img src={app.user.userData.image} alt="profile" />
                   </div>
                   <div className="col-12 col-md-8 col-lg-9 profle">

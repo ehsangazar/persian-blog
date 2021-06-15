@@ -1,33 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/SEO/SEO'
-import '../app/assets/css/elegant.css'
-import '../app/assets/css/custom_bootstrap.css'
-import '../app/assets/css/slick.css'
-import '../app/assets/css/plyr.min.css'
-import '../app/assets/css/style.css'
-import './index.css'
 import PrivacyImg from './privacy.png'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const PrivacyPolicy = ({ location }) => {
   return (
     <Layout location={location} title={'حریم خصوصی'} page="PrivacyPolicy">
       <SEO title={'حریم خصوصی'} />
-      {/* <Banner /> */}
       <div id="content">
         <div class="container">
-          <div class="breadcrumb">
-            <ul>
-              <li>
-                <Link to={'/'}>
-                  <i class="fas fa-home"></i>خانه
-                </Link>
-              </li>
-              <li class="active">حریم خصوصی</li>
-            </ul>
-          </div>
+       
           <div class="PrivacyPolicy-us">
             <div class="row content-container">
               <>

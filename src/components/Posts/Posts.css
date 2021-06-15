@@ -1,0 +1,28 @@
+.blog-masonry.posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.blog-masonry.posts img {
+  width: 100%;
+}
+.blog-masonry.posts .card__content h5 {
+  padding-right: 0;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 550px) {
+  .blog-masonry.posts {
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-end;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .blog-masonry.posts {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: flex-end;
+  }
+}

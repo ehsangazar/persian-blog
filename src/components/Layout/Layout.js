@@ -6,7 +6,7 @@ const Layout = ({ children, page, location }) => {
   return (
     <>
       <Header page={page} location={location} />
-      <div className="main-page-posts">{children}</div>
+      <div className="mainSection">{children}</div>
       <Footer location={location} />
     </>
   )

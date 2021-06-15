@@ -11,15 +11,10 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link
-          rel="stylesheet"
-          href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
-        />
         <meta
           name="google-site-verification"
           content="UXeKh4Q5dFgN8644aV17x41YWfSVCKMFW41zIQ8vwO8"
         />
-
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

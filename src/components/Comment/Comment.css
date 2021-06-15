@@ -1,0 +1,22 @@
+.comment__item {
+  position: relative;
+  margin-bottom: 20px;
+}
+.comment__item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.comment__item .data p {
+  margin: 0;
+}
+.comment__item__avatar {
+  margin-left: 10px;
+  display: grid;
+  align-items: flex-start;
+  gap: 10px;
+  justify-items: center;
+}
+.comment__item__reply {
+  margin-right: 70px;
+}
