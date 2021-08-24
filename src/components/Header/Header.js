@@ -78,7 +78,7 @@ const Header = ({ page, location }) => {
                     className="dropdown-item"
                     rel="noopener noreferrer"
                     target="_blank"
-                    href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
+                    href="https://maktabkhooneh.org/teacher/%D8%A7%D8%AD%D8%B3%D8%A7%D9%86-%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1-tch810/"
                   >
                     دوره‌ها
                   </OutboundLink>
@@ -106,7 +106,7 @@ const Header = ({ page, location }) => {
                     target="_blank"
                     href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
                   >
-                      دوره‌ها
+                    دوره‌ها
                   </OutboundLink>
                   <Dropdown.Divider />
                   <Link
@@ -133,80 +133,93 @@ const Header = ({ page, location }) => {
           </Dropdown>
         </div>
         <div className="--desktopOnly">
-            <div className="header__actions">              
-              <div>
-                {app.load.loadingName === 'profile' && (
-                  <img className="loading" src={loading} alt="loading" />
-                )}
-              </div>
-              <OutboundLink
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
-              >
-                <Button
-                  variant="primary"
-                  type="button"
-                >
-                  دوره‌ها
-                </Button>
-              </OutboundLink>
-              {!app.user.userData.id && (
-                <div className="header__buttons">                  
-                  <Button
-                    variant="seondary"
-                    type="submit"
-                    onClick={() => app.modal.setModalToShow('register')}
-                  >
-                    ثبت‌نام
-                  </Button>
-                  <Button
-                    variant="seondary"
-                    type="submit"
-                    onClick={() => app.modal.setModalToShow('login')}
-                  >
-                    ورود
-                  </Button>
-                </div>
-              )}
-              {app.user.userData.id && (
-                <div className="header__infos">
-                  <div className="hi">
-                    سلام {app.user.userData.first_name}!
-                  </div>
-                  <a>
-                    <Dropdown>
-                      <Dropdown.Toggle variant="dropdown">
-                        <img src={app.user.userData.image} alt="profile" />
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu>
-                        <Link
-                          className="dropdown-item"
-                          to={'/profile?state=editProfile'}
-                        >
-                          پروفایل
-                        </Link>
-                        {/* <Dropdown.Item onClick={handleSendTestimonial}>
-                          ثبت توصیه‌نامه
-                        </Dropdown.Item> */}
-                        <Link
-                          className="dropdown-item"
-                          to={'/profile?state=changePassword'}
-                        >
-                          تغییر رمز عبور
-                        </Link>
-                        <Dropdown.Item onClick={handleClickOnLogOut}>
-                          خروج
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </a>
-                </div>
+          <div className="header__actions">
+            <div>
+              {app.load.loadingName === 'profile' && (
+                <img className="loading" src={loading} alt="loading" />
               )}
             </div>
+            <OutboundLink
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
+            >
+              <Button variant="primary" type="button">
+                دوره‌ها
+              </Button>
+            </OutboundLink>
+            {!app.user.userData.id && (
+              <div className="header__buttons">
+                <Button
+                  variant="seondary"
+                  type="submit"
+                  onClick={() => app.modal.setModalToShow('register')}
+                >
+                  ثبت‌نام
+                </Button>
+                <Button
+                  variant="seondary"
+                  type="submit"
+                  onClick={() => app.modal.setModalToShow('login')}
+                >
+                  ورود
+                </Button>
+              </div>
+            )}
+            {app.user.userData.id && (
+              <div className="header__infos">
+                <div className="hi">سلام {app.user.userData.first_name}!</div>
+                <a>
+                  <Dropdown>
+                    <Dropdown.Toggle variant="dropdown">
+                      <img src={app.user.userData.image} alt="profile" />
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Link
+                        className="dropdown-item"
+                        to={'/profile?state=editProfile'}
+                      >
+                        پروفایل
+                      </Link>
+                      {/* <Dropdown.Item onClick={handleSendTestimonial}>
+                          ثبت توصیه‌نامه
+                        </Dropdown.Item> */}
+                      <Link
+                        className="dropdown-item"
+                        to={'/profile?state=changePassword'}
+                      >
+                        تغییر رمز عبور
+                      </Link>
+                      <Dropdown.Item onClick={handleClickOnLogOut}>
+                        خروج
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </a>
+              </div>
+            )}
           </div>
+        </div>
       </header>
       <AuthModals />
+
+      <div className="container-sm">
+        <div
+          role="alert"
+          className="fade alert alert-success show d-flex justify-content-between align-items-center"
+        >
+          لطفا عضو تلگرام PersiaJS شوید تا با همه‌ی کامینیوتی در ارتباط باشیم
+          <OutboundLink
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://t.me/joinchat/BcZHTxkf2MoIC1pHxJ_xSw"
+          >
+            <Button variant="secondary" type="button">
+              عضو شوید
+            </Button>
+          </OutboundLink>
+        </div>
+      </div>
     </>
   )
 }

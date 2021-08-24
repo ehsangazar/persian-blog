@@ -6,9 +6,8 @@ import { Button, Form, Alert } from 'react-bootstrap'
 import NewsletterConfirmModal from '../NewsletterConfirmModal/NewsletterConfirmModal'
 import fetchHandler from '../../utils/fetchHandler'
 import './Footer.css'
-import { IoLogoInstagram } from "@react-icons/all-files/io5/IoLogoInstagram";
-import { IoLogoLinkedin } from "@react-icons/all-files/io5/IoLogoLinkedin";
-import { IoLogoYoutube } from "@react-icons/all-files/io5/IoLogoYoutube";
+import { IoLogoLinkedin, IoLogoInstagram, IoLogoYoutube } from 'react-icons/io5'
+import { FaTelegram, FaWhatsappSquare } from 'react-icons/fa'
 
 const Footer = () => {
   const [showConfirmEmailModal, setShowConfirmEmailModal] = useState(false)
@@ -122,14 +121,28 @@ const Footer = () => {
         <OutboundLink
           rel="noopener noreferrer"
           target="_blank"
-          href="https://www.instagram.com/gazar_in_persian"
+          href="https://wa.me/%2B61423277852?text=Hey%20Gazar"
+        >
+          <FaWhatsappSquare />
+        </OutboundLink>
+        <OutboundLink
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://t.me/ehsangazar"
+        >
+          <FaTelegram />
+        </OutboundLink>
+        <OutboundLink
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.instagram.com/ehsangazar/"
         >
           <IoLogoInstagram />
         </OutboundLink>
         <OutboundLink
           rel="noopener noreferrer"
           target="_blank"
-          href="https://www.linkedin.com/company/fa-ehsangazar-com"
+          href="https://www.linkedin.com/in/gazar/"
         >
           <IoLogoLinkedin />
         </OutboundLink>
