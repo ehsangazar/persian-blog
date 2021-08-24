@@ -104,7 +104,7 @@ const Header = ({ page, location }) => {
                     className="dropdown-item"
                     rel="noopener noreferrer"
                     target="_blank"
-                    href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
+                    href="https://maktabkhooneh.org/teacher/%D8%A7%D8%AD%D8%B3%D8%A7%D9%86-%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1-tch810/"
                   >
                     دوره‌ها
                   </OutboundLink>
@@ -142,7 +142,7 @@ const Header = ({ page, location }) => {
             <OutboundLink
               rel="noopener noreferrer"
               target="_blank"
-              href="https://maktabkhooneh.org/learn/?q=%D8%A7%D8%AD%D8%B3%D8%A7%D9%86+%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1"
+              href="https://maktabkhooneh.org/teacher/%D8%A7%D8%AD%D8%B3%D8%A7%D9%86-%DA%AF%D8%A7%D8%B2%D8%A7%D8%B1-tch810/"
             >
               <Button variant="primary" type="button">
                 دوره‌ها
