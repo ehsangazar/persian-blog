@@ -11,7 +11,7 @@
     "@deckdeckgo/highlight-code": "^3.3.0",
     "@sentry/react": "^5.25.0",
     "@sentry/tracing": "^5.25.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
     "crypto-js": "^4.0.0",
     "gatsby": "^2.21.0",
