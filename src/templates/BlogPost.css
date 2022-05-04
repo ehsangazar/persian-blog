@@ -1,8 +1,0 @@
-.col-12.col-md-4.col-lg-4.content-image {
-  position: relative;
-}
-.col-12.col-md-4.col-lg-4.content-image img {
-  position: sticky;
-  top: 20px;
-  margin-bottom: 20px;
-}
