@@ -32,7 +32,7 @@ body {
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #720068;
+  --clr-primary: #f8bb70;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -140,12 +140,16 @@ button {
   font-size: 1.2rem;
 }
 
+.btn-group {
+  display: flex;
+  padding: 30px 0;
+}
+
 .btn {
   display: block;
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
-  text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -237,6 +241,15 @@ main {
   text-transform: uppercase;
 }
 
+.section__description {
+  font-size: 1rem;
+  max-width: 600px;
+  text-align: right;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
 .nav__list {
   margin-right: 1.5em;
   display: flex;
@@ -274,6 +287,7 @@ main {
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+  text-align: justify;
 }
 
 .about .link--icon {
