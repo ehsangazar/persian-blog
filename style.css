@@ -248,6 +248,8 @@ main {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 
 .nav__list {
@@ -267,6 +269,8 @@ main {
 .about {
   flex-direction: column;
   margin-top: 3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 
 .about__name {
@@ -288,6 +292,8 @@ main {
 .about__contact {
   margin-top: 2.4em;
   text-align: justify;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 
 .about .link--icon {
@@ -323,6 +329,8 @@ main {
 
 .project__description {
   margin-top: 1em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 
 .project__stack {
