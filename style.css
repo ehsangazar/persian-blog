@@ -33,7 +33,7 @@ body {
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #f8bb70;
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 0px 5px 0px;
 }
 
 .dark {
@@ -142,13 +142,21 @@ button {
 
 .btn-group {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding: 30px 0;
+  width: 100%;
 }
 
 .btn {
   display: block;
   padding: 0.8em 1.4em;
+  margin: 0.5em;
   font-weight: 500;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
   font-size: 0.9rem;
   transition: transform 0.2s ease-in-out;
 }
@@ -241,6 +249,10 @@ main {
   text-transform: uppercase;
 }
 
+.text-align-center {
+  text-align: center !important;
+}
+
 .section__description {
   font-size: 1rem;
   max-width: 600px;
@@ -315,7 +327,7 @@ main {
 .project {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 2em 0;
   margin: 0 auto;
   text-align: center;
   max-width: 300px;
@@ -324,13 +336,13 @@ main {
 }
 
 .project:hover {
-  transform: translateY(-7px);
+  transform: translateY(-2px);
 }
 
 .project__description {
   margin-top: 1em;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .project__stack {
@@ -456,4 +468,31 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+}
+.video-frame {
+  padding: 40px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.project__image {
+  width: 100%;
+  padding-top: 10px;
+}
+a {
+  color: #f8bb70;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.list-left {
+  direction: ltr;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+  list-style: disc;
+}
+.list-left li {
+  direction: ltr;
+  text-align: left;
 }
