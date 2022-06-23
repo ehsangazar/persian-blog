@@ -491,6 +491,8 @@ a {
   max-width: 500px;
   margin: 0 auto;
   list-style: disc;
+  list-style-position: inside;
+  padding: 0 10px;
 }
 .list-left li {
   direction: ltr;
