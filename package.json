@@ -18,7 +18,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build docs"
+    "build": "npm run pre-build && npm run release",
+    "pre-build": "rm -rf ./build && rm -rf ./docs && react-scripts build",
+    "release": "mv build docs && cp ./CNAME ./docs/$1"
   },
   "eslintConfig": {
     "extends": [
