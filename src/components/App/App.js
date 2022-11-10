@@ -38,7 +38,7 @@ function App() {
           <Wrap>
             <WrapItem>
               <Avatar
-                size="2xl"
+                size={["lg", "2xl"]}
                 name="احسان گازار"
                 src="./ehsan-gazar-wrist-up.jpg"
               />{" "}
@@ -50,7 +50,7 @@ function App() {
             justifyContent={"center"}
             px={4}
           >
-            <Heading as="h1" size="3xl" pb={2}>
+            <Heading as="h1" size={["xl", "3xl"]} pb={2}>
               احسان گازار
             </Heading>
             <Text>برنامه‌نویس، مدرس، بلاگر و صخره نورد</Text>
@@ -286,7 +286,7 @@ function App() {
                     isExternal
                   >
                     <Button w={"100%"} colorScheme="teal" leftIcon={<FaLink />}>
-                      آموزش طراحی وب‌سایت (Front-End) در مکتب‌خونه
+                      آموزش طراحی وب‌سایت (Front-End)
                     </Button>
                   </Link>
                 </Box>
@@ -325,7 +325,7 @@ function App() {
                     isExternal
                   >
                     <Button w={"100%"} colorScheme="teal" leftIcon={<FaLink />}>
-                      آموزش React JS مقدماتی در مکتب‌خونه
+                      آموزش React JS مقدماتی
                     </Button>
                   </Link>
                 </Box>
@@ -366,7 +366,7 @@ function App() {
                     isExternal
                   >
                     <Button w={"100%"} colorScheme="teal" leftIcon={<FaLink />}>
-                      آموزش جاوا اسکریپت در مکتب‌خونه
+                      آموزش جاوا اسکریپت
                     </Button>
                   </Link>
                 </Box>
@@ -408,7 +408,7 @@ function App() {
                     isExternal
                   >
                     <Button w={"100%"} colorScheme="teal" leftIcon={<FaLink />}>
-                      آموزش Node JS در مکتب‌خونه
+                      آموزش Node JS
                     </Button>
                   </Link>
                 </Box>
@@ -447,7 +447,7 @@ function App() {
                     isExternal
                   >
                     <Button w={"100%"} colorScheme="teal" leftIcon={<FaLink />}>
-                      آموزش React Native در مکتب‌خونه
+                      آموزش React Native
                     </Button>
                   </Link>
                 </Box>
@@ -490,7 +490,7 @@ function App() {
                     isExternal
                   >
                     <Button w={"100%"} colorScheme="teal" leftIcon={<FaLink />}>
-                      آموزش React JS پیشرفته در مکتب‌خونه
+                      آموزش React JS پیشرفته
                     </Button>
                   </Link>
                 </Box>
@@ -531,7 +531,7 @@ function App() {
                     isExternal
                   >
                     <Button w={"100%"} colorScheme="teal" leftIcon={<FaLink />}>
-                      آموزش کد تمیز در مکتب‌خونه
+                      آموزش کد تمیز
                     </Button>
                   </Link>
                 </Box>
@@ -635,7 +635,7 @@ function App() {
                 isExternal
                 color={"teal.500"}
               >
-                ویدئوهای ضبط شده در Loom برای سوالات عمومی
+                سوالات عمومی
               </Link>
             </ListItem>
             <ListItem>
@@ -644,7 +644,7 @@ function App() {
                 isExternal
                 color={"teal.500"}
               >
-                ویدئوهای ضبط شده در Loom برای دوره React مقدماتی
+                دوره React مقدماتی
               </Link>
             </ListItem>
             <ListItem>
@@ -653,7 +653,7 @@ function App() {
                 isExternal
                 color={"teal.500"}
               >
-                ویدئوهای ضبط شده در Loom برای دوره جاوااسکریپت
+                دوره جاوااسکریپت
               </Link>
             </ListItem>
             <ListItem>
@@ -662,7 +662,7 @@ function App() {
                 isExternal
                 color={"teal.500"}
               >
-                ویدئوهای ضبط شده در Loom برای دوره React پیشرفته
+                دوره React پیشرفته
               </Link>
             </ListItem>
             <ListItem>
@@ -671,7 +671,7 @@ function App() {
                 isExternal
                 color={"teal.500"}
               >
-                ویدئوهای ضبط شده در Loom برای دوره NodeJS
+                دوره NodeJS
               </Link>
             </ListItem>
             <ListItem>
@@ -680,7 +680,7 @@ function App() {
                 isExternal
                 color={"teal.500"}
               >
-                ویدئوهای ضبط شده در Loom برای دوره React Native
+                دوره React Native
               </Link>
             </ListItem>
             <ListItem>
@@ -689,7 +689,7 @@ function App() {
                 isExternal
                 color={"teal.500"}
               >
-                ویدئوهای ضبط شده در Loom برای دوره کد تمیز
+                دوره کد تمیز
               </Link>
             </ListItem>
           </UnorderedList>
