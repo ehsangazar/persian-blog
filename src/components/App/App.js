@@ -108,7 +108,11 @@ function App() {
             gridGap={4}
             gridTemplateColumns={"repeat(auto-fit, minmax(100px,1fr))"}
           >
-            <Link href="https://www.facebook.com/ehsan.gzr" isExternal>
+            <Link
+              className="button-link"
+              href="https://www.facebook.com/ehsan.gzr"
+              isExternal
+            >
               <Button
                 w={"100%"}
                 colorScheme="facebook"
@@ -117,7 +121,11 @@ function App() {
                 Facebook
               </Button>
             </Link>
-            <Link href="https://www.linkedin.com/in/gazar/" isExternal>
+            <Link
+              className="button-link"
+              href="https://www.linkedin.com/in/gazar/"
+              isExternal
+            >
               <Button
                 w={"100%"}
                 colorScheme="linkedin"
@@ -126,17 +134,29 @@ function App() {
                 Linkedin
               </Button>
             </Link>
-            <Link href="https://twitter.com/ehsangazar" isExternal>
+            <Link
+              className="button-link"
+              href="https://twitter.com/ehsangazar"
+              isExternal
+            >
               <Button w={"100%"} colorScheme="twitter" leftIcon={<FaTwitter />}>
                 Twitter
               </Button>
             </Link>
-            <Link href="https://www.instagram.com/ehsangazar/" isExternal>
+            <Link
+              className="button-link"
+              href="https://www.instagram.com/ehsangazar/"
+              isExternal
+            >
               <Button w={"100%"} colorScheme="red" leftIcon={<FaInstagram />}>
                 Instagram
               </Button>
             </Link>
-            <Link href="mailto:me@ehsangazar.com" isExternal>
+            <Link
+              className="button-link"
+              href="mailto:me@ehsangazar.com"
+              isExternal
+            >
               <Button
                 w={"100%"}
                 colorScheme="green"
@@ -170,22 +190,38 @@ function App() {
             gridGap={4}
             gridTemplateColumns={"repeat(auto-fit, minmax(100px,1fr))"}
           >
-            <Link href="https://persiajs.dev/" isExternal>
+            <Link
+              className="button-link"
+              href="https://persiajs.dev/"
+              isExternal
+            >
               <Button w={"100%"} colorScheme="orange" leftIcon={<FaLink />}>
                 Website
               </Button>
             </Link>
-            <Link href="https://discord.gg/sN2dkKaG3D" isExternal>
+            <Link
+              className="button-link"
+              href="https://discord.gg/sN2dkKaG3D"
+              isExternal
+            >
               <Button w={"100%"} colorScheme="purple" leftIcon={<FaDiscord />}>
                 Discord
               </Button>
             </Link>
-            <Link href="https://www.youtube.com/c/PersiaJS" isExternal>
+            <Link
+              className="button-link"
+              href="https://www.youtube.com/c/PersiaJS"
+              isExternal
+            >
               <Button w={"100%"} colorScheme="red" leftIcon={<FaYoutube />}>
                 Youtube
               </Button>
             </Link>
-            <Link href="https://www.instagram.com/persiajs.dev/" isExternal>
+            <Link
+              className="button-link"
+              href="https://www.instagram.com/persiajs.dev/"
+              isExternal
+            >
               <Button w={"100%"} colorScheme="red" leftIcon={<FaInstagram />}>
                 Instagram
               </Button>

@@ -15,3 +15,6 @@
 .direction-ltr {
     direction: ltr;
 }
+.button-link:hover {
+    text-decoration: none !important;
+}
