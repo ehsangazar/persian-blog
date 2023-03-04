@@ -21,7 +21,6 @@ import {
 } from "@chakra-ui/react";
 import {
   FaDiscord,
-  FaFacebook,
   FaInstagram,
   FaLink,
   FaLinkedin,
@@ -90,18 +89,6 @@ function App() {
           <Text textAlign={"justify"}>
             اگر هم می‌خواید رزومه‌ی من رو ببینید سری به بزنید
           </Text>
-          <Box pt={8}>
-            <div className="video-container">
-              <iframe
-                width="100%"
-                height="auto"
-                src="https://www.youtube.com/embed/TfxrwU8CYs0"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen=""
-              ></iframe>
-            </div>
-          </Box>
           <Box
             py={8}
             display="grid"
@@ -110,27 +97,10 @@ function App() {
           >
             <Link
               className="button-link"
-              href="https://www.facebook.com/ehsan.gzr"
-              isExternal
-            >
-              <Button
-                w={"100%"}
-                colorScheme="facebook"
-                leftIcon={<FaFacebook />}
-              >
-                Facebook
-              </Button>
-            </Link>
-            <Link
-              className="button-link"
               href="https://www.linkedin.com/in/gazar/"
               isExternal
             >
-              <Button
-                w={"100%"}
-                colorScheme="linkedin"
-                leftIcon={<FaLinkedin />}
-              >
+              <Button w={"100%"} colorScheme="gray" leftIcon={<FaLinkedin />}>
                 Linkedin
               </Button>
             </Link>
@@ -139,7 +109,7 @@ function App() {
               href="https://twitter.com/ehsangazar"
               isExternal
             >
-              <Button w={"100%"} colorScheme="twitter" leftIcon={<FaTwitter />}>
+              <Button w={"100%"} colorScheme="gray" leftIcon={<FaTwitter />}>
                 Twitter
               </Button>
             </Link>
@@ -148,7 +118,7 @@ function App() {
               href="https://www.instagram.com/ehsangazar/"
               isExternal
             >
-              <Button w={"100%"} colorScheme="red" leftIcon={<FaInstagram />}>
+              <Button w={"100%"} colorScheme="gray" leftIcon={<FaInstagram />}>
                 Instagram
               </Button>
             </Link>
@@ -169,7 +139,7 @@ function App() {
         </Box>
         <Box pt={12}>
           <Heading as="h2" size="xl" pb={4}>
-            پرشیا جی‌اس
+            دوره‌های آموزشی و پرشیا‌جی‌اس
           </Heading>
           <Text textAlign={"justify"}>
             کامیونیتی و گروهی برای برنامه‌نویسان فارسی زبان که من و سایر دوستان
@@ -195,7 +165,7 @@ function App() {
               href="https://persiajs.dev/"
               isExternal
             >
-              <Button w={"100%"} colorScheme="orange" leftIcon={<FaLink />}>
+              <Button w={"100%"} colorScheme="green" leftIcon={<FaLink />}>
                 Website
               </Button>
             </Link>
@@ -204,7 +174,7 @@ function App() {
               href="https://discord.gg/sN2dkKaG3D"
               isExternal
             >
-              <Button w={"100%"} colorScheme="purple" leftIcon={<FaDiscord />}>
+              <Button w={"100%"} colorScheme="gray" leftIcon={<FaDiscord />}>
                 Discord
               </Button>
             </Link>
@@ -213,7 +183,7 @@ function App() {
               href="https://www.youtube.com/c/PersiaJS"
               isExternal
             >
-              <Button w={"100%"} colorScheme="red" leftIcon={<FaYoutube />}>
+              <Button w={"100%"} colorScheme="gray" leftIcon={<FaYoutube />}>
                 Youtube
               </Button>
             </Link>
@@ -222,13 +192,13 @@ function App() {
               href="https://www.instagram.com/persiajs.dev/"
               isExternal
             >
-              <Button w={"100%"} colorScheme="red" leftIcon={<FaInstagram />}>
+              <Button w={"100%"} colorScheme="gray" leftIcon={<FaInstagram />}>
                 Instagram
               </Button>
             </Link>
           </Box>
         </Box>
-        <Box pt={12}>
+        <Box pt={12} display="none">
           <Heading as="h2" size="xl" pb={4}>
             دوره‌های آموزشی
           </Heading>
@@ -539,7 +509,7 @@ function App() {
             </AccordionItem>
           </Accordion>
         </Box>
-        <Box pt={12}>
+        <Box pt={12} display="none">
           <Heading as="h2" size="xl" pb={4}>
             سخنرانی‌ها
           </Heading>
@@ -617,7 +587,7 @@ function App() {
             </UnorderedList>
           </Box>
         </Box>
-        <Box pt={12}>
+        <Box pt={12} display="none">
           <Heading as="h2" size="xl" pb={4}>
             بررسی کد و تصحیح پروژه
           </Heading>
@@ -695,7 +665,7 @@ function App() {
           </UnorderedList>
         </Box>
 
-        <Box pt={12}>
+        {/* <Box pt={12}>
           <Heading as="h2" size="xl" pb={4}>
             خبرنامه
           </Heading>
@@ -712,7 +682,7 @@ function App() {
               allowFullScreen
             ></iframe>
           </Box>
-        </Box>
+        </Box> */}
         <Box pt={12}>
           <Divider />
           <Box py={8}>
