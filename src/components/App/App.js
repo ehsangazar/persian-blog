@@ -151,8 +151,18 @@ function App() {
             علاقه‌مند به برنامه‌نویسی است، وارد آن شوید و با شرکت در برنامه‌های
             مختلف به یکدیگر کمک کنیم.
           </Text>
+          <br />
           <Text textAlign={"justify"}>
-            لطفا برای دریافت اطلاعات بیشتر عضو Discord گروه شوید
+            به لطف دوستان ما در این گروه توانستیم یک سری پروژه‌های بزرگتر هم به
+            صورت open source برنامه نویسی کنیم. برای شما که میخواهید تجربه‌ی
+            کاری داشته باشید یا یاد بگیرید چطور با گروه بزرگتری برنامه‌نویسی
+            کنید. پیشنهاد میکنم دست خود را در گروه تلگرام بالا ببرید و تسک
+            بگیرید.
+          </Text>
+          <br />
+          <Text textAlign={"justify"}>
+            سوالات برنامه‌نویسی یا مسیر شغلی‌ خودتون رو حتما در گروه تلگرام
+            بپرسید و در اسرع وقت توسط من یا سایر دوستانتان جواب بگیرید
           </Text>
           <Box
             py={8}
@@ -167,6 +177,15 @@ function App() {
             >
               <Button w={"100%"} colorScheme="green" leftIcon={<FaLink />}>
                 Website
+              </Button>
+            </Link>
+            <Link
+              className="button-link"
+              href="https://t.me/joinchat/BcZHTxkf2MoIC1pHxJ_xSw"
+              isExternal
+            >
+              <Button w={"100%"} colorScheme="telegram" leftIcon={<FaLink />}>
+                Telegram
               </Button>
             </Link>
             <Link
