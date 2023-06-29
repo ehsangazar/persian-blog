@@ -18,8 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run pre-build && npm run release",
-    "pre-build": "rm -rf ./build && react-scripts build",
+    "clean": "rm -rf ./build",
+    "build": "react-scripts build && npm run release",
     "release": "cp ./CNAME ./build/$1"
   },
   "eslintConfig": {
