@@ -2,6 +2,7 @@
   "name": "persian-blog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fa.ehsnagazar.com",
   "dependencies": {
     "@chakra-ui/react": "^2.3.7",
     "@emotion/react": "^11.10.5",
@@ -20,7 +21,8 @@
     "start": "react-scripts start",
     "clean": "rm -rf ./build",
     "build": "react-scripts build && npm run release",
-    "release": "cp ./CNAME ./build/$1"
+    "release": "cp ./CNAME ./build/$1",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
