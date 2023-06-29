@@ -2,7 +2,6 @@
   "name": "persian-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fa.ehsnagazar.com",
   "dependencies": {
     "@chakra-ui/react": "^2.3.7",
     "@emotion/react": "^11.10.5",
