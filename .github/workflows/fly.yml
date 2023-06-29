@@ -26,4 +26,6 @@ jobs:
       - name: Deploy to GH Pages 🚀
         run: |
           npm i -g gh-pages
+          git config --global user.email "me@ehsangazar.com"
+          git config --global user.name "Ehsan Gazar"
           yarn deploy
