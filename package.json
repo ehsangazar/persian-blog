@@ -19,7 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "clean": "rm -rf ./build",
-    "build": "react-scripts build"
+    "build": "react-scripts build && npm run release",
+    "release": "cp ./CNAME ./build/$1"
   },
   "eslintConfig": {
     "extends": [
