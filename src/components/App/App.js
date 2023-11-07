@@ -115,7 +115,7 @@ function App() {
             </Link>
             <Link
               className="button-link"
-              href="https://www.instagram.com/ehsangazar/"
+              href="https://www.instagram.com/gazar.dev/"
               isExternal
             >
               <Button w={"100%"} colorScheme="gray" leftIcon={<FaInstagram />}>
